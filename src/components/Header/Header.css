@@ -1,0 +1,124 @@
+/* .nav-link{
+    text-decoration: none;
+} */
+/* .navbar-link-wrapper .nav-link:hover{
+    color: white;
+} */
+/* .darkmode-color{
+    color: white;
+}
+.lightmode-color{
+    color: black;
+} */
+/* .navabr{
+    position: fixed;
+    right: 0;
+    left: 0;
+    top: 0;
+} */
+/* a{
+    text-decoration: none;
+} */
+.navbar{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    /* height: 61px; */
+    padding: 2rem;
+}
+.navbar-container {
+    display: flex;
+    justify-content: space-between;
+    position: fixed;
+    /* background: #111827; */
+    padding: 1rem 0rem;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 30000;
+}
+
+.darkmode-navbar{
+    /* background: rgb(63, 123, 240);
+    background: linear-gradient(90deg, rgba(63, 123, 240, 0.9921218487394958) 35%, rgba(46, 97, 107, 0.9445028011204482) 100%); */
+    background: rgb(238,174,202);
+    background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%);
+
+
+}
+.customized-btn:hover{
+    color: white;
+}
+.customized-btn{
+    color: white;
+    background: linear-gradient(90.35deg, #2563EB 0.36%, #D946EF 201.02%);
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+}
+#menu-link,.customized-btn, .contact-link{
+    text-decoration: none;
+    font-size: 16px;
+}
+#menu-link ,.customized-btn, .contact-link:hover{
+    text-decoration: none;
+}
+.img-logo{
+    margin-right: 1rem;
+}
+.mobile-menu-icon i {
+    font-size: 26px;
+}
+
+.mobile-menu-icon:hover {
+    cursor: pointer;
+}
+
+#mobileicon {
+    display: none;
+}
+/* @media (max-width: 576px) */
+@media (max-width: 768px) {
+    .contact-link{
+        display: none;
+    }
+  
+
+}
+@media (max-width: 576px) {
+    #mobileicon {
+        display: flex;
+    }
+    
+    #menu-link {
+        padding: 1.3rem 0;
+    }
+    
+    nav {
+        padding: 1rem 0.5rem;
+    }
+    
+    .navbar-link-wrapper {
+        /* position: absolute; */
+        position: fixed;
+        right: -200px;
+        top: 0px;
+        top: 4.3rem;
+        height: 100vh;
+        width: 200px;
+        /* margin-top: 3.8rem; */
+        flex-direction: column;
+        background-color: #24314beb;
+        transition: 0.5s;
+    }
+    
+    .navbar-active {
+        right: 0;
+        transition: 0.5s;
+    }
+    .contact-link{
+        display: block;
+    }
+}

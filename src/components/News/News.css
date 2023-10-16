@@ -1,0 +1,103 @@
+.news-section {
+    margin-top: 6rem;
+    margin-bottom: 6rem;
+}
+
+.news-wrapper {
+    color: white;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+.news-wrapper > *{
+    margin-bottom: 1.5rem;
+}
+.news-input-wrapper {
+    /* border: 2px solid yellow; */
+    width: 100%;
+    border-radius: 88px 88px 98px 98px / 78px 78px 75px 75px;
+    padding: 1rem 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+
+}
+
+.news-input-wrapper input {
+    border-radius: 88px 88px 98px 98px / 78px 78px 75px 75px;
+    /* padding: 1.5rem; */
+    font-size: 18px;
+    background-color: transparent;
+    outline: none;
+    border: none;
+    -webkit-box-shadow: 1px 1px 17px 1px #2564eb86;
+    box-shadow: 1px 1px 17px 1px #2564eb86;
+    /* border: 1px solid #2564eb86; */
+    margin-right: -113px;
+    padding: 2rem;
+    /* flex: 1 0 100%; */
+    max-width: 700px;
+    transition: 0.3s;
+}
+
+.news-input-wrapper button {
+    color: white;
+    background: linear-gradient(90.35deg, #2563EB 0.36%, #D946EF 201.02%);
+    padding: 0.5rem 1rem;
+    border: none;
+    outline: none;
+    border-radius: 88px 88px 98px 98px / 78px 78px 75px 75px;
+}
+
+.news-input-wrapper input::placeholder {
+    color: white;
+    opacity: 50%;
+}
+
+.news-input-wrapper input:focus {
+    color: white;
+    border: 0px solid rgba(72, 202, 249, 0.3);
+    background-color: transparent;
+    -webkit-box-shadow: 1px 1px 17px 6px #2564eb86;
+    box-shadow: 1px 1px 17px 6px #2564eb86;
+    transition: 0.3s;
+}
+.send-icon{
+    color: white;
+    margin-left: 0.3rem;
+   
+}
+.send-news-btn .send-icon i{
+    transform: translate(0px, -0px) skew(0deg, 0deg);
+    transition: 0.3s;
+}
+.send-news-btn:hover .send-icon i{
+    transform: translate(3px, -2px) skew(1deg, 0deg);
+    transition: 0.3s;
+}
+@media (max-width: 768px) {
+    .news-input-wrapper button {
+        display: block;
+    }
+
+}
+@media (max-width: 370px){
+    .news-input-wrapper {
+        flex-direction: column;
+    }
+    .news-input-wrapper input{
+        margin: 0;
+        width: 100%;
+        border-radius: 0;
+        padding: 1rem;
+        font-size: 15px;
+    }
+    .news-input-wrapper button{
+        margin: 0;
+        width: 100%;
+        border-radius: 0;
+    }
+}
